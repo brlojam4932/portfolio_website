@@ -8,5 +8,6 @@ export default function App({ Component, pageProps }) {
       </Theme>
     </>
   );
-}
- 
+};
+
+// npm run dev

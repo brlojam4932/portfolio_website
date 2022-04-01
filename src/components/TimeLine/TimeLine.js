@@ -49,7 +49,7 @@ const Timeline = () => {
     <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        My prvious background was in 3D FX animation and motion graphics, where I worked for various studios in Los Angeles and other cities. I first became interested in Crypto currencies in 2017, after witnessing the catastrophic financial crisis in 2008 and bought my first Bitcoin and Etherum.
+        I first became interested in Crypto currencies in 2017, after witnessing the catastrophic financial crisis in 2008 and bought my first Bitcoin and Etherum.
         In 2020, after the Covid lockdown, I decided to learn blockchain development for Solidity and enrolled with Ivan on Tech Academy, now Moralis.
         Since then, I have been taking their courses and following and learning from other YouTubers like Dapp University, JS Mastery and others.
         I am exicted and looking forward to working on blockchain projects to help develop exiting products for the near future.
@@ -92,7 +92,7 @@ const Timeline = () => {
                         <stop
                           offset="0.79478"
                           stop-color="white"
-                          stop-opacity="0"
+                          stopOpacity="0"
                         />
                       </linearGradient>
                     </defs>
