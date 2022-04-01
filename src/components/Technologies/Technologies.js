@@ -3,53 +3,44 @@ import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
-const Technologies = () =>  (
-  <Section id="tech">
-    <SectionDivider divider />
+const Technologies = () => (
+  <Section id='tech'>
+    <SectionDivider />
+    <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      I have worked in this space a long time. I started first learning JS, then Solidity, Truffle, Ganache. Then React. Then I became interested in learning Ethers and Hardhat. I am now learning how to use Moralis Web3 products.
     </SectionText>
     <List>
       <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experiece with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
+        <DiFirebase size="3em" />
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node and Databases
+            JS |
+            Solidity |
+            Truffle |
+            Ganache |
+            Hardhat
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
+        <DiReact size="3em" />
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            tools like Figma
+            React.JS |
+            Web3 |
+            Ethers.JS |
+            Moralis
           </ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
-    <SectionDivider colorAlt />
+
   </Section>
 );
 

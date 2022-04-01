@@ -12,17 +12,18 @@ const Timeline = () => {
 
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: 'smooth' });
-  }
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
+
 
   const handleScroll = () => {
     if (carouselRef.current) {
@@ -42,11 +43,16 @@ const Timeline = () => {
     window.addEventListener('resize', handleResize);
   }, []);
 
+
+
   return (
-    <Section id="about">
+    <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        My prvious background was in 3D FX animation and motion graphics, where I worked for various studios in Los Angeles and other cities. I first became interested in Crypto currencies in 2017, after witnessing the catastrophic financial crisis in 2008 and bought my first Bitcoin and Etherum.
+        In 2020, after the Covid lockdown, I decided to learn blockchain development for Solidity and enrolled with Ivan on Tech Academy, now Moralis.
+        Since then, I have been taking their courses and following and learning from other YouTubers like Dapp University, JS Mastery and others.
+        I am exicted and looking forward to working on blockchain projects to help develop exiting products for the near future.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -99,22 +105,22 @@ const Timeline = () => {
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((item, index) => {
-          return (
-            <CarouselButton
-              key={index}
-              index={index}
-              active={activeItem}
-              onClick={(e) => handleClick(e, index)}
-              type="button">
-              <CarouselButtonDot active={activeItem} />
-            </CarouselButton>
-          );
-        })}
+        {TimeLineData.map((item, index) => (
+          <CarouselButton
+            key={index}
+            index={index}
+            active={activeItem}
+            onClick={(e) => handleClick(e.index)}
+            type="button"
+          >
+            <CarouselButtonDot active={activeItem} />
+          </CarouselButton>
+        ))}
       </CarouselButtons>
       <SectionDivider />
     </Section>
   );
+
 };
 
 export default Timeline;
