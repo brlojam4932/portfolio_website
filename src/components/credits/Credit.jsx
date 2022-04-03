@@ -8,7 +8,7 @@ function Credit() {
     <br />
     <SectionTitle>Credits</SectionTitle>
     <SectionText>
-      I would like to give credit to all the Devs I've learned from. Here are my main sources for learning.
+      I would like to thank all the devs I've learned from. Here are my main sources for learning.
     </SectionText>
     <SectionText>
       Solidity/Blockchain/Web3: The Moralis Academy, Dapp University, Smart Contract Programmer, Chinlink with Patrick and Nadar Dabit, Facundo Carballo, Artur Chmaro, EatTheBlocks, JS Mastery 

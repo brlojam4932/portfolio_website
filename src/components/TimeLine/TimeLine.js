@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import { ImgSm } from '../Projects/ProjectsStyles';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -99,6 +100,9 @@ const Timeline = () => {
                   </CarouselItemImg>
                 </CarouselItemTitle>
                 <CarouselItemText>{item.text}</CarouselItemText>
+                <SectionDivider />
+                <br />
+                <ImgSm src={item.image} />
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}

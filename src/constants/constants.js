@@ -3,7 +3,7 @@ export const projects = [
     title: 'DEX & ERC20 Wallet',
     description: "This project involves a decentralized exchange and an ERC20 wallet, where one can input a smart contract address and interact with the token. The DEX can be approved via Metamask, import a token and trade it for another token. It can also listen for events and print transactions from the blockchain. The creation of this DEX was quite a yourney though. I took the Ethereum Smart Contract Programming 201 course with instructor, Filip Martinsson, which invloved learning to write and test smart contracts with Solidity, Truffle, Ganache and Web3 js. Once completed, the challange was to develop a frontend for the DEX so I then took a React Web Development class with Zsolt. Afterwards, I built a trading app as another challenge, learned some more, including Ethers js, Hardat and eventually build the front end.",
     image: '/images/dex/dex_001.png',
-    tags: ['Solidity', 'Hardhat', 'Ethers', 'React'],
+    tags: ['Solidity', 'Hardhat', 'Ethers', 'React', 'OpenZeppelin'],
     source: 'https://github.com/brlojam4932/dex2-app.git',
     visit: 'https://ecstatic-brahmagupta-3f9a21.netlify.app/',
     id: 0,
@@ -21,16 +21,16 @@ export const projects = [
     title: 'Falcon Exchange App',
     description: "This is my first React project with instructor Zsolt Nagy from Moralis Academy. This app focused mainly on React, Axios and fetching token data from Coin Gecko. The challange was to add a graph, a news page and what ever else so I added the graph, a news page, an exchanges page, my own styling and icons. I also learned a lot from JS Mastery and others. Originally, the JS Master project was a Redux project but I converted it to a regular React app since I as most comfortable with that and it was a chance to learn more React",
     image: '/images/falcon/falconTrades_balance.png',
-    tags: ['React', "Axios", 'Javascript'],
+    tags: ['React', "Axios", 'Javascript', 'Coin Gecko'],
     source: 'https://github.com/brlojam4932/falcon-app.git',
     visit: 'https://elated-bassi-9cac7a.netlify.app/',
     id: 2,
   },
   {
     title: 'Robo Kitties NFT',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+    description: "This Robo Kitties project was my second project with insturctor Filip Martinsson from Moralis Academy. This project was aimed at learning how to write an NFT, using Solidity and OpenZeppelin smart contract, ERC721. We also added our own logic and created our own cats with HTML and CSS. The app contains a Market Place and a random cat generator, where one can generate a kitten, breed it with another kitten and sell it on the Ethereum blockchain.",
     image: '/images/roboKitties/03_cryptokitties_ropsten_breed.png',
-    tags: ['Solidity', 'Hardhat', 'Web3', 'JQuery'],
+    tags: ['Solidity', 'Hardhat', 'Web3', 'OpenZeppelin'],
     source: 'https://github.com/brlojam4932/myCryptoKitties_master.git',
     visit: 'https://youthful-murdock-e07205.netlify.app/',
     id: 3,
@@ -38,9 +38,8 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  { year: 2020, text: 'JavaScript for Blockchain Development', image: '/images/certificates/javascript.png' },
+  { year: 2021, text: 'React Web Development 101', image: '/images/certificates/react.png' },
+  { year: 2022, text: 'Ethereum Dapp Programming', image: '/images/certificates/dapps.png' },
+  { year: 2022, text: 'Ethereum Smart Contract Programming 201', image: '/images/certificates/ethereum.png' },
 ];

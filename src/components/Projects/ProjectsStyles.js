@@ -7,6 +7,13 @@ export const Img = styled.img`
   overflow: hidden;
 `
 
+export const ImgSm = styled.img`
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  overflow: hidden;
+`
+
 export const GridContainer = styled.section`
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
