@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
@@ -10,7 +10,7 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href='tel:323-219-3050'>323-219-3050</LinkItem>
+          <LinkItem href='tel:323-219-3050'>+1 323-219-3050</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
@@ -19,17 +19,17 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project ast a time</Slogan>
+          <Slogan>Changing the world one Satoshi at a time</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href='https://github.com/brlojam4932'>
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href='https://www.linkedin.com/in/ben-lopez'>
+          <SocialIcons href='https://www.linkedin.com/in/ben-lopez-94360a236/'>
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href='https://instagram.com'>
-            <AiFillInstagram size="3rem" />
+          <SocialIcons href='https://twitter.com/bjam55'>
+            <AiFillTwitterCircle size="3rem" />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
